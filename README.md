@@ -25,17 +25,31 @@ git clone https://github.com/holasoymalva/ai-image-generation.git
 cd ai-image-generation
 ```
 
-2. Instala las dependencias:
+2. Crea y activa un entorno virtual:
+
+En Windows:
+```bash
+python -m venv venv
+.\venv\Scripts\activate
+```
+
+En macOS/Linux:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+3. Instala las dependencias:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Crea un archivo `.env` basado en el ejemplo:
+4. Crea un archivo `.env` basado en el ejemplo:
 ```bash
 cp .env.example .env
 ```
 
-4. Edita el archivo `.env` y añade tu API key de Stable Diffusion:
+5. Edita el archivo `.env` y añade tu API key de Stable Diffusion:
 ```
 STABILITY_API_KEY=tu_api_key_aqui
 ```
